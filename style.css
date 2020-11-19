@@ -5,8 +5,13 @@
 
     /* navigation bar */
     .topnav {
-        overflow: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100%;
         background-color: #333;
+        z-index: 9px;
     }
 
     
@@ -33,29 +38,56 @@
 
     /* home page */
     .logo{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 100px;
         filter: brightness(120%);
-        width: 18%;
+        width: 200px; 
+        opacity: 0.9;
     }
     
-    .primary-title{
-        margin-left: auto;
-        margin-right: auto;
-        margin: auto;
-        text-align: center;
+    .homepageitem{
+      position: absolute;
+      text-align: center;
+      align-self: center;
+      justify-content: center;
+      top: 30%;
+      left: 10%;
+      width: 30%;
     }
 
     .bgimage{
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: auto;
-        opacity: 0.3;
-    
+        background: url("background images/bgimage.jpg") no-repeat center;
+        height: 900px;
+        background-size: cover;
+        padding: 20px 0px;
+        position: relative;
+        opacity: 0.5;
+    }
+    .memberbgimage{
+      background: url("background images/gi-dle-dumdi-dumdi.jpg") no-repeat center;
+      height: 900px;
+      background-size: cover;
+      padding: 20px 0;
+      position: relative;
+      opacity: 0.5;
+  }
+    .primary-title{
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 20px;
+    }
+
+    .musicvideo{
+      position: absolute;
+      text-align: center;
+      justify-content: center;
+      align-self: center;
+      bottom: 0;
+      left: 49%;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 25px;
+    }
+
+    .musicvideo iframe{
+      width:700px; 
+      height:385px;
     }
     /*end of home page */
 
@@ -104,7 +136,6 @@
         width: 330px;
         
       }
-
       /* end of first 3 members */
 
       /* next 3 members */
@@ -150,14 +181,47 @@
         background-color: darkslateblue;
         width: 330px;
       }
-
+      /* end of last 3 members */
 
       .row{
           display: flex;
           justify-content: center;
+          margin-top:80px;
+          padding: 10px 10px
       }
       
       .row2{
           display: flex;
           justify-content: center;
+          margin-bottom: 100px;
+          padding: 10px 10px
+      }
+
+      .rowcontainer{
+        position: absolute;
+        top: 5%;
+        left: 2%;
+      }
+
+      footer{
+        background-color: grey;
+      }
+      footer p{
+        text-align: center;
+        font-size: 20px;
+        margin:0;
+      }
+      .fbicon{
+        width: 60px;
+        margin-right: 15px;
+      }
+      .instagramicon{
+        width: 60px;
+      }
+      .twittericon{
+        width: 60px;
+        margin-left: 15px;
+      }
+      .icons{
+        text-align: center;
       }
